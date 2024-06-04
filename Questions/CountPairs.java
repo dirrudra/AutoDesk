@@ -1,8 +1,6 @@
 import java.util.*;
 
-
-
-public class TwoArrays {
+public class CountPairs {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
         int n1 = sc.nextInt();
