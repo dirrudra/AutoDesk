@@ -1,44 +1,43 @@
 import java.util.*;
 
 public class Songs {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        List<String> songs = Arrays.asList(scanner.nextLine().split(","));
-        List<String> animations = Arrays.asList(scanner.nextLine().split(","));
-
-        Map<String, Integer> hashSongs = new HashMap<>();
-        Map<Integer, String> hashAnimations = new HashMap<>();
-
-        for (String song : songs) {
-            int index = song.indexOf(":");
-            hashSongs.put(song.substring(0, index), Integer.parseInt(song.substring(index + 1)));
+        String[] songsInput = scanner.nextLine().split(" ");
+        String[] animationsInput = scanner.nextLine().split(" ");
+        Map<String, Integer> hashsongs = new HashMap<>();
+        for (String song : songsInput) {
+            int index = song.indexOf(':');
+            String key = song.substring(0, index);
+            int value = Integer.parseInt(song.substring(index + 1));
+            hashsongs.put(key, value);
         }
-
-        for (String animation : animations) {
-            int index = animation.indexOf(":");
-            hashAnimations.put(Integer.parseInt(animation.substring(index + 1)), animation.substring(0, index));
+        Map<Integer, String> hashanimations = new TreeMap<>(); // TreeMap to maintain sorted order by default
+        for (String animation : animationsInput) {
+            int index = animation.indexOf(':');
+            String key = animation.substring(0, index);
+            int value = Integer.parseInt(animation.substring(index + 1));
+            hashanimations.put(value, key);
         }
-
+        
         List<String> res = new ArrayList<>();
 
-        for (String song : hashSongs.keySet()) {
-            int val = hashSongs.get(song);
-            for (int animation : sorted(hashAnimations.keySet())) {
-                if (val % animation == 0) {
-                    String s = hashAnimations.get(animation) + ":" + String.valueOf(val / animation);
-                    res.add(s);
+        for (Map.Entry<String, Integer> songEntry : hashsongs.entrySet()) {
+            String songKey = songEntry.getKey();
+            int songValue = songEntry.getValue();
+            
+            for (Map.Entry<Integer, String> animationEntry : hashanimations.entrySet()) {
+                int animationValue = animationEntry.getKey();
+                String animationKey = animationEntry.getValue();
+                
+                if (songValue % animationValue == 0) {
+                    String result = animationKey + ":" + (songValue / animationValue);
+                    res.add(result);
                     break;
                 }
             }
         }
-
         System.out.println(res);
-    }
-
-    private static List<Integer> sorted(List<Integer> list) {
-        List<Integer> sortedList = new ArrayList<>(list);
-        Collections.sort(sortedList);
-        return sortedList;
     }
 }
