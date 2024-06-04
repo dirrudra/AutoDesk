@@ -1,0 +1,21 @@
+Sorting algorithms Arrays and arraylists
+
+Comparators 
+
+DFS
+
+BFS
+
+Traversals
+
+Tree Structures
+
+    AVL
+    Binary
+    BinarySearch
+    Tries
+
+
+
+DP
+

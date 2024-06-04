@@ -1,0 +1,16 @@
+Here are one LeetCode easy problem for each Java data structure listed:
+
+1. **Arrays**: [Two Sum](https://leetcode.com/problems/two-sum/)
+2. **ArrayList**: [Design an Ordered Stream](https://leetcode.com/problems/design-an-ordered-stream/)
+3. **LinkedList**: [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
+4. **Queue**: [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
+5. **PriorityQueue**: [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)
+6. **LinkedList Queue**: [Design Front Middle Back Queue](https://leetcode.com/problems/design-front-middle-back-queue/)
+7. **Stack**: [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+8. **Deque**: [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
+9. **Set**: [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
+10. **HashSet**: [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)
+11. **HashMap**: [Two Sum](https://leetcode.com/problems/two-sum/)
+12. **Tree**: [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+
+These problems are suitable for practicing each corresponding data structure in Java.

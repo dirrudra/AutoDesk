@@ -1,0 +1,97 @@
+import java.util.*;
+
+public class Basics {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        int[] array = new int[10];
+        array[0] = 1;
+        array[1] = 2;
+        
+        int[] arr1 = {1, 2, 3, 4, 5, 6};
+
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        arrayList.add(1);
+        arrayList.add(2);
+
+        int value = arrayList.get(0);
+        arrayList.set(0, 10);
+        arrayList.remove(0);
+        int size = arrayList.size();
+        boolean isEmpty = arrayList.isEmpty();
+        boolean contains = arrayList.contains(2);
+
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.add(1);
+        linkedList.add(2);
+
+        int val = linkedList.get(0);
+        linkedList.set(0, 10);
+        linkedList.remove(0);
+        int len = linkedList.size();
+        boolean isempty = linkedList.isEmpty();
+        boolean contain = linkedList.contains(2);
+
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(1);
+        queue.add(2);
+        int first = queue.poll();
+
+        int vals = queue.poll();
+        int head = queue.peek();
+        boolean empty = queue.isEmpty();
+        int lens = queue.size();
+
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
+        priorityQueue.add(3);
+        priorityQueue.add(1);
+        priorityQueue.add(2);
+        int min = priorityQueue.poll();
+
+        int valu = priorityQueue.poll();
+        int header = priorityQueue.peek();
+        boolean checkEmpty = priorityQueue.isEmpty();
+        int sizer = priorityQueue.size();
+
+        Queue<Integer> linkedListQueue = new LinkedList<>();
+        linkedListQueue.add(1);
+        linkedListQueue.add(2);
+        int one = linkedListQueue.poll();
+
+        int values = linkedListQueue.poll();
+        int headers = linkedListQueue.peek();
+        boolean checkEmpties = linkedListQueue.isEmpty();
+        int sizers = linkedListQueue.size();
+
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        int top = stack.pop();
+        
+        int valuer = stack.pop();
+        int topper = stack.peek();
+        boolean isEmpties = stack.isEmpty();
+        int sizes = stack.size();
+
+        Deque<Integer> deque = new ArrayDeque<>();
+        deque.addFirst(1);
+        deque.addLast(2);
+        int firstly = deque.removeFirst();
+        int lastly = deque.removeLast();
+
+        int peekFirst = deque.peekFirst();
+        int peekLast = deque.peekLast();
+        boolean isEmptily = deque.isEmpty();
+        int sizely = deque.size();
+
+        Set<Integer> set = new HashSet<>();
+        set.add(1);
+        set.add(2);
+                
+        boolean containers = set.contains(1);
+        set.remove(1);
+        boolean isEmptyly = set.isEmpty();
+        int sizily = set.size();
+
+        Hash
